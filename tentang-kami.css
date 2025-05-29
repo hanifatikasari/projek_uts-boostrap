@@ -1,0 +1,224 @@
+html {
+    font-family: 'poppins';
+}
+
+nav{
+    border-bottom: solid 2px #A57622;
+}
+
+nav img {
+    width: 150px;
+    height: auto;
+}
+
+.navbar-nav .nav-link,
+.navbar-nav .nav-link.active {
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #c1bdbd;
+}
+
+.nav-link.disabled{
+    color: #dad7d1;
+}
+
+.content-wrapper {
+    padding: 20px 50px;
+}
+
+/* screen 1  */
+.tentang{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 65px;
+}
+
+.tentang-text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 24px;
+}
+
+.tentang-text h1{
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.tentang-text p{
+    padding-right: 50px;
+}
+
+.tentang-ilustrate{
+    max-width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-items: right;
+}
+
+
+.form{
+    padding-right: 50%;
+}
+
+/* Grid layout untuk dua kolom */
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+/* Supaya input 2 kolom rata */
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Styling form */
+label{
+    
+    font-weight:500;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 15px 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 15px 46%;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #444;
+    transform: translateY(2px);
+}
+
+.form h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    padding-top: 120px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-link h3{
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.kontak {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* kasih jarak antara gambar dan teks */
+    margin-bottom: 10px;
+}
+
+.kontak img {
+    width: 30px;
+    height: 30px;
+}
+
+.kontak a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.kontak a:hover{
+    color: #828282;
+}
+
+.footer-logo img{
+    
+    width: 200px;
+    height: auto;
+    
+}
+
+@media screen and (max-width: 768px) {
+     nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .nav-link {
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    .nav-btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .content-wrapper {
+        padding: 30px 20px;
+    }
+
+    .tentang {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
+    .tentang-text {
+        padding-right: 0;
+    }
+
+  .tentang-ilustrate img {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+}
+
+   .form-row {
+        flex-direction: column;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    
+}
